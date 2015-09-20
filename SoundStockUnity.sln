@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoundStockUnity.CSharp.Plugins", "SoundStockUnity.CSharp.Plugins.csproj", "{6FDD9828-8A6A-6A1C-1906-016F90FB6821}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoundStockUnity.CSharp", "SoundStockUnity.CSharp.csproj", "{4C5CFE03-F52F-61A8-EE50-BB5AD362EB07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoundStockUnity.CSharp.Editor", "SoundStockUnity.CSharp.Editor.csproj", "{62C141E0-5F35-313F-BD93-B254AD439D5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FDD9828-8A6A-6A1C-1906-016F90FB6821}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FDD9828-8A6A-6A1C-1906-016F90FB6821}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FDD9828-8A6A-6A1C-1906-016F90FB6821}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FDD9828-8A6A-6A1C-1906-016F90FB6821}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C5CFE03-F52F-61A8-EE50-BB5AD362EB07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C5CFE03-F52F-61A8-EE50-BB5AD362EB07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C5CFE03-F52F-61A8-EE50-BB5AD362EB07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C5CFE03-F52F-61A8-EE50-BB5AD362EB07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62C141E0-5F35-313F-BD93-B254AD439D5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62C141E0-5F35-313F-BD93-B254AD439D5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62C141E0-5F35-313F-BD93-B254AD439D5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62C141E0-5F35-313F-BD93-B254AD439D5B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
