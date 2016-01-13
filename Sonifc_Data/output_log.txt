@@ -5,3 +5,41 @@ Direct3D:
     Renderer: Intel(R) HD Graphics 4000 (ID=0x166)
     Vendor:   Intel
     VRAM:     128 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Chen Ye\Documents\GitHub\SoundStockUnity\Sonifc_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Chen Ye\Documents\GitHub\SoundStockUnity\Sonifc_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Chen Ye\Documents\GitHub\SoundStockUnity\Sonifc_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Chen Ye\Documents\GitHub\SoundStockUnity\Sonifc_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Chen Ye\Documents\GitHub\SoundStockUnity\Sonifc_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Chen Ye\Documents\GitHub\SoundStockUnity\Sonifc_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Chen Ye\Documents\GitHub\SoundStockUnity\Sonifc_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Chen Ye\Documents\GitHub\SoundStockUnity\Sonifc_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Chen Ye\Documents\GitHub\SoundStockUnity\Sonifc_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Chen Ye\Documents\GitHub\SoundStockUnity\Sonifc_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Chen Ye\Documents\GitHub\SoundStockUnity\Sonifc_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.316 seconds
+desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Chen Ye\Documents\GitHub\SoundStockUnity\Sonifc_Data\Managed\System.dll (this message is harmless)
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1649)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GAudio.Examples.FloatPulser.OnEnable () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 7e4 -> priority: 1 
+ERROR: 404 Not Found
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GAudio.Examples.FloatPulser.OnDisable () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
