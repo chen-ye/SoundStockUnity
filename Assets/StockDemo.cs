@@ -54,7 +54,21 @@ namespace SoundStock
         IEnumerator Start()
         {
             stocks = new Dictionary<string, Stock>();
-            WWW www = new WWW("https://raw.githubusercontent.com/laurapang/SoundStock/master/updatedTrades4.json");
+            Boolean loadContinuous = true;
+            if (loadContinuous)
+            {
+                String[] symbols = new String[2]{ "NDAQ", "GOOG" };
+                return loadContinuously(System.DateTime.Now, symbols);
+            }
+            else
+            {
+                return loadHistoricalData();
+            }
+        }
+
+        IEnumerator loadHistoricalData()
+        {
+            WWW www = new WWW("file:///C:/Users/Skylion/Documents/GitHub/SoundStock/updatedTrades4.json");
             yield return www;
             if (www.error == null)
             {
@@ -63,6 +77,35 @@ namespace SoundStock
 
                 //Process books found in JSON file
                 LoadTradeData(www.text);
+            }
+            else
+            {
+                Debug.Log("ERROR: " + www.error);
+            }
+        }
+
+        IEnumerator loadContinuously(DateTime now, String[] symbols)
+        {
+            WWWForm form = new WWWForm();
+            form.AddField("_Token", "EE28DC758EE846CB956F7380E7141CE8"); //The token
+            form.AddField("Symbols", string.Join(", ", symbols)); //The Sy,bols you want
+            DateTime easternTime = System.DateTime.Now; //Current UTC TI
+                                                        //DateTime easternTime = TimeZoneInfo.ConvertTimeBySystemTimeZoneId(thisDate, "UTC", "Eastern Standard Time"); //Converts UTC Time to Eastern
+                                                        //TimeZoneInfo est = TimeZoneInfo.FindSystemTimeZoneById("Eastern Standard Time");
+                                                        //DateTime easternTime = TimeZoneInfo.ConvertTime(System.DateTime.Now, est);
+
+            Console.WriteLine(easternTime.ToString("MM/dd/yy H:mm:ss.fff"));
+            form.AddField("DateTime", easternTime.ToString("MM/dd/yy H:mm:ss.fff")); //The proper DateTime in the proper format
+            var url = "http://ws.nasdaqdod.com/v1/NASDAQTrades.asmx/GetPreviousTrade HTTP/1.1"; //"http://ws.nasdaqdod.com/v1/NASDAQTrades.asmx/GetNextTrade"; //Post endpoint
+            WWW www = new WWW(url, form);
+            yield return www;
+            if (www.error == null)
+            {
+                //Sucessfully loaded the JSON string
+                Debug.Log("Loaded following JSON string" + www.text);
+
+                //Process books found in JSON file
+                print(www.text);
             }
             else
             {
