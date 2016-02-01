@@ -37,15 +37,15 @@ namespace SoundStock
 
             Stocks data = JsonMapper.ToObject<Stocks>(json_text);
 
-            foreach (Stock stock in data.stocks) {
-                stocks[stock.name] = stock;
-                dataLength = stock.trades.Count;
-                print(stock.name);
-                foreach(Trade trade in stock.trades)
-                {
-                    //print(trade.percent);
-                }
-            }
+            //foreach (Stock stock in data.stocks) {
+            //    stocks[stock.name] = stock;
+            //    dataLength = stock.trades.Count;
+            //    print(stock.name);
+            //    foreach(Trade trade in stock.trades)
+            //    {
+            //        //print(trade.percent);
+            //    }
+            //}
             print("done loading trade data");
         }
 
